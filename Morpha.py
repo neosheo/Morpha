@@ -48,7 +48,9 @@ for torrent in torrents[0]:
 				time.sleep(900)
 				get_current_list()
 				if torrent['status'] == 'downloaded':
-					link = torrent['links[0]']
+					link = torrent['links'][0]
+					with open('.download_link', 'w') as f:
+						f.write(link)
 					break
 	else:
 		continue
