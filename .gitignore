@@ -1,0 +1,12 @@
+.env
+.access_token
+.download_link
+.magnet_link
+.torrent_info
+.torrent_name
+.torrents_list
+.tracker
+.unrestricted_info
+.unrestricted_link
+icon
+lib/__*
