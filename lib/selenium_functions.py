@@ -88,7 +88,8 @@ def rd_login():
 	time.sleep(2)
 	cookie_prompt_xpath = '//a[@id="cookieChoiceDismiss"]'
 	cookie_prompt = WDW(driver, 12).until(EC.presence_of_element_located((By.XPATH, cookie_prompt_xpath)))
-	cookie_prompt.click()
+	if cookie_prompt:
+		cookie_prompt.click()
 
 
 
